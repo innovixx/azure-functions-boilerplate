@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=12345678;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing"
+  }
+}
