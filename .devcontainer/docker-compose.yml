@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  app:
+  server:
     build: 
       context: .
       dockerfile: Dockerfile
@@ -19,4 +19,4 @@ services:
       - AZURITE_ACCOUNTS=devstoreaccount1:devstoreaccount1:12345678
       - AZURITE_BLOB_HOST=0.0.0.0
       - TZ=UTC
-    network_mode: service:app
+    network_mode: service:server
