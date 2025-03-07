@@ -2,6 +2,7 @@
   "name": "azure-function-boilerplate",
   "version": "0.0.1",
   "description": "azure-function-boilerplate",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -12,7 +13,7 @@
     "dev": "concurrently \"yarn run watch\" \"yarn run start\""
   },
   "dependencies": {
-    "@azure/functions": "^4.5.0"
+    "@azure/functions": "^4.6.1"
   },
   "devDependencies": {
     "@innovixx/eslint-config": "^1.3.3",
@@ -26,5 +27,5 @@
     "rimraf": "^5.0.0",
     "typescript": "^4.0.0"
   },
-  "main": "dist/src/functions/*.js"
+  "main": "dist/src/functions/**/*.js"
 }
