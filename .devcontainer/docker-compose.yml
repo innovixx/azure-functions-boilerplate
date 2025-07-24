@@ -7,8 +7,8 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ../..:/workspaces:cached
-      - ~/.ssh:/home/node/.ssh:cached
-      - ~/.npmrc:/home/node/.npmrc:cached
+      - ~/.ssh:/home/vscode/.ssh:cached
+      - ~/.npmrc:/home/vscode/.npmrc:cached
     command: sleep infinity
     working_dir: /workspaces/azure-function-boilerplate
 
