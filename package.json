@@ -1,38 +1,38 @@
 {
-  "name": "azure-function-boilerplate",
-  "version": "0.0.1",
-  "description": "azure-function-boilerplate",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "clean": "rimraf dist",
-    "prestart": "yarn run clean && yarn run build",
-    "start": "func start",
-    "test": "echo \"No tests yet...\"",
-    "dev": "concurrently \"yarn run watch\" \"yarn run start\"",
-    "lint-staged": "lint-staged --verbose",
-    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "@azure/functions": "^4.6.1"
-  },
-  "devDependencies": {
-    "@innovixx/eslint-config": "^3.0.10",
-    "@types/node": "^18.x",
-    "concurrently": "^8.2.1",
-    "eslint": "^9.28.0",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
-    "rimraf": "^5.0.0",
-    "typescript": "^5.7.3"
-  },
-  "lint-staged": {
-    "**/*.{js,ts,jsx,tsx}": [
-      "eslint",
-      "bash -c tsc"
-    ]
-  },
-  "main": "dist/src/functions/**/*.js"
+	"name": "azure-function-boilerplate",
+	"version": "0.0.1",
+	"description": "azure-function-boilerplate",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"clean": "rimraf dist",
+		"prestart": "yarn run clean && yarn run build",
+		"start": "func start",
+		"test": "echo \"No tests yet...\"",
+		"dev": "concurrently \"yarn run watch\" \"yarn run start\"",
+		"lint-staged": "lint-staged --verbose",
+		"lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+		"prepare": "if [ -d node_modules/husky ]; then husky; fi"
+	},
+	"dependencies": {
+		"@azure/functions": "^4.6.1"
+	},
+	"devDependencies": {
+		"@innovixx/eslint-config": "^3.0.10",
+		"@types/node": "^18.x",
+		"concurrently": "^8.2.1",
+		"eslint": "^9.28.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.0",
+		"rimraf": "^5.0.0",
+		"typescript": "^5.7.3"
+	},
+	"lint-staged": {
+		"**/*.{js,ts,jsx,tsx}": [
+			"eslint",
+			"bash -c tsc"
+		]
+	},
+	"main": "dist/src/functions/**/*.js"
 }
