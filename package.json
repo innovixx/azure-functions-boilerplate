@@ -7,10 +7,10 @@
 		"build": "tsc",
 		"watch": "tsc -w",
 		"clean": "rimraf dist",
-		"prestart": "yarn run clean && yarn run build",
+		"prestart": "pnpm run clean && pnpm run build",
 		"start": "func start",
 		"test": "echo \"No tests yet...\"",
-		"dev": "concurrently \"yarn run watch\" \"yarn run start\"",
+		"dev": "concurrently \"pnpm run watch\" \"pnpm run start\"",
 		"lint-staged": "lint-staged --verbose",
 		"lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
 		"prepare": "if [ -d node_modules/husky ]; then husky; fi"
