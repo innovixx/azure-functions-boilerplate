@@ -19,10 +19,10 @@
 		"@azure/functions": "^4.11.2"
 	},
 	"devDependencies": {
-		"@innovixx/eslint-config": "^3.0.11",
+		"@innovixx/eslint-config": "^3.0.12",
 		"@types/node": "^25.4.0",
 		"concurrently": "^9.2.1",
-		"eslint": "^10.0.3",
+		"eslint": "9.39.4",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.3.3",
 		"rimraf": "^6.1.3",
