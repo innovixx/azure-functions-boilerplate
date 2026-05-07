@@ -12,7 +12,7 @@
 		"test": "echo \"No tests yet...\"",
 		"dev": "concurrently \"pnpm run watch\" \"pnpm run start\"",
 		"lint-staged": "lint-staged --verbose",
-		"lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+		"lint": "eslint ./src/**/*.{js,ts}",
 		"prepare": "if [ -d node_modules/husky ]; then husky; fi"
 	},
 	"dependencies": {
