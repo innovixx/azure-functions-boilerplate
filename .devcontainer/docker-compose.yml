@@ -9,6 +9,7 @@ services:
       - ../..:/workspaces:cached
       - ~/.ssh:/home/vscode/.ssh:cached
       - ~/.npmrc:/home/vscode/.npmrc:cached
+      - ~/.gitconfig:/home/vscode/.gitconfig:cached
     command: sleep infinity
     working_dir: /workspaces/azure-function-boilerplate
 
