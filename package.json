@@ -19,7 +19,7 @@
 		"@azure/functions": "^4.16.2"
 	},
 	"devDependencies": {
-		"@innovixx/eslint-config": "^3.0.12",
+		"@innovixx/eslint-config": "^3.0.13-alpha.1",
 		"@types/node": "^26.1.1",
 		"concurrently": "^10.0.3",
 		"eslint": "9.39.4",
