@@ -1,4 +1,6 @@
 allowBuilds:
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@innovixx/eslint-config@3.0.13'
 onlyBuiltDependencies:
   - unrs-resolver
